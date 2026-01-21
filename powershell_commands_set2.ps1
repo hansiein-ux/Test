@@ -1,4 +1,4 @@
-#Powershell variable assignment examples
+#Powershell variable assignment examples..
 $welcome_str = "Hello, Friends!"                 #string variable
 $number = 42                                #integer variable
 $isActive = $true                           #boolean variable
