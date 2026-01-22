@@ -1,0 +1,214 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\hansp\OneDrive\Elijah Baptism Documents\WindowsPowerShell\Git> git clone https://github.com/hansiein-ux/Test.git
+Cloning into 'Test'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+PS C:\Users\hansp\OneDrive\Elijah Baptism Documents\WindowsPowerShell\Git> cd test
+PS C:\Users\hansp\OneDrive\Elijah Baptism Documents\WindowsPowerShell\Git\test> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        powershell_commands_set1.ps1
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\hansp\OneDrive\Elijah Baptism Documents\WindowsPowerShell\Git\test> git add .
+PS C:\Users\hansp\OneDrive\Elijah Baptism Documents\WindowsPowerShell\Git\test> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   powershell_commands_set1.ps1
+
+PS C:\Users\hansp\OneDrive\Elijah Baptism Documents\WindowsPowerShell\Git\test> git commit -m "Initial commit"
+[main f7596f0] Initial commit
+ 1 file changed, 108 insertions(+)
+ create mode 100644 powershell_commands_set1.ps1
+PS C:\Users\hansp\OneDrive\Elijah Baptism Documents\WindowsPowerShell\Git\test> git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+PS C:\Users\hansp\OneDrive\Elijah Baptism Documents\WindowsPowerShell\Git\test> git push https://github.com/hansiein-ux/Test.git
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.64 KiB | 842.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/hansiein-ux/Test.git
+   b912245..f7596f0  main -> main
+PS C:\Users\hansp\OneDrive\Elijah Baptism Documents\WindowsPowerShell\Git\test> git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        powershell_commands_set2.ps1
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\hansp\OneDrive\Elijah Baptism Documents\WindowsPowerShell\Git\test> git add .
+PS C:\Users\hansp\OneDrive\Elijah Baptism Documents\WindowsPowerShell\Git\test> git commit -m "Initial commit"
+[main 1a20dac] Initial commit
+ 1 file changed, 153 insertions(+)
+ create mode 100644 powershell_commands_set2.ps1
+PS C:\Users\hansp\OneDrive\Elijah Baptism Documents\WindowsPowerShell\Git\test> git push https://github.com/hansiein-ux/Test.git
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.89 KiB | 1.89 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/hansiein-ux/Test.git
+   f7596f0..1a20dac  main -> main
+PS C:\Users\hansp\OneDrive\Elijah Baptism Documents\WindowsPowerShell\Git\test> git add .
+PS C:\Users\hansp\OneDrive\Elijah Baptism Documents\WindowsPowerShell\Git\test> git commit -m "Delete File"
+[main e48bc58] Delete File
+ 1 file changed, 108 deletions(-)
+ delete mode 100644 powershell_commands_set1.ps1
+PS C:\Users\hansp\OneDrive\Elijah Baptism Documents\WindowsPowerShell\Git\test> git push https://github.com/hansiein-ux/Test.git
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 217 bytes | 217.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/hansiein-ux/Test.git
+   1a20dac..e48bc58  main -> main
+PS C:\Users\hansp\OneDrive\Elijah Baptism Documents\WindowsPowerShell\Git\test> git pull https://github.com/hansiein-ux/Test.git
+From https://github.com/hansiein-ux/Test
+ * branch            HEAD       -> FETCH_HEAD
+Already up to date.
+PS C:\Users\hansp\OneDrive\Elijah Baptism Documents\WindowsPowerShell\Git\test> git pull https://github.com/hansiein-ux/Test.git 1a20dac6a5b4426421a3fb50617588e34a9db5af
+From https://github.com/hansiein-ux/Test
+ * branch            1a20dac6a5b4426421a3fb50617588e34a9db5af -> FETCH_HEAD
+Already up to date.
+PS C:\Users\hansp\OneDrive\Elijah Baptism Documents\WindowsPowerShell\Git\test> git checkout 1a20dac6a5b4426421a3fb50617588e34a9db5af
+
+Note: switching to '1a20dac6a5b4426421a3fb50617588e34a9db5af'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 1a20dac Initial commit
+PS C:\Users\hansp\OneDrive\Elijah Baptism Documents\WindowsPowerShell\Git\test> git status
+HEAD detached at 1a20dac
+nothing to commit, working tree clean
+PS C:\Users\hansp\OneDrive\Elijah Baptism Documents\WindowsPowerShell\Git\test> git checkout -b recover
+Switched to a new branch 'recover'
+PS C:\Users\hansp\OneDrive\Elijah Baptism Documents\WindowsPowerShell\Git\test> git status
+On branch recover
+nothing to commit, working tree clean
+PS C:\Users\hansp\OneDrive\Elijah Baptism Documents\WindowsPowerShell\Git\test> git push https://github.com/hansiein-ux/Test.git
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'recover' on GitHub by visiting:
+remote:      https://github.com/hansiein-ux/Test/pull/new/recover
+remote:
+To https://github.com/hansiein-ux/Test.git
+ * [new branch]      recover -> recover
+PS C:\Users\hansp\OneDrive\Elijah Baptism Documents\WindowsPowerShell\Git\test> git push https://github.com/hansiein-ux/Test.git recover:recover
+Everything up-to-date
+PS C:\Users\hansp\OneDrive\Elijah Baptism Documents\WindowsPowerShell\Git\test> git branch
+  main
+* recover
+PS C:\Users\hansp\OneDrive\Elijah Baptism Documents\WindowsPowerShell\Git\test> git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+PS C:\Users\hansp\OneDrive\Elijah Baptism Documents\WindowsPowerShell\Git\test> git branch
+* main
+  recover
+PS C:\Users\hansp\OneDrive\Elijah Baptism Documents\WindowsPowerShell\Git\test> git merge recover
+Already up to date.
+PS C:\Users\hansp\OneDrive\Elijah Baptism Documents\WindowsPowerShell\Git\test> git reset --hard recover
+HEAD is now at 1a20dac Initial commit
+PS C:\Users\hansp\OneDrive\Elijah Baptism Documents\WindowsPowerShell\Git\test> git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+PS C:\Users\hansp\OneDrive\Elijah Baptism Documents\WindowsPowerShell\Git\test> git push https://github.com/hansiein-ux/Test.git
+To https://github.com/hansiein-ux/Test.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/hansiein-ux/Test.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PS C:\Users\hansp\OneDrive\Elijah Baptism Documents\WindowsPowerShell\Git\test> git push https://github.com/hansiein-ux/Test.git --force
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/hansiein-ux/Test.git
+ + e48bc58...1a20dac main -> main (forced update)
+PS C:\Users\hansp\OneDrive\Elijah Baptism Documents\WindowsPowerShell\Git\test> git checkout -b develop
+Switched to a new branch 'develop'
+PS C:\Users\hansp\OneDrive\Elijah Baptism Documents\WindowsPowerShell\Git\test> git branch
+* develop
+  main
+  recover
+PS C:\Users\hansp\OneDrive\Elijah Baptism Documents\WindowsPowerShell\Git\test> git status
+On branch develop
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   powershell_commands_set2.ps1
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\hansp\OneDrive\Elijah Baptism Documents\WindowsPowerShell\Git\test> git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Disable this message with "git config set advice.addEmptyPathspec false"
+PS C:\Users\hansp\OneDrive\Elijah Baptism Documents\WindowsPowerShell\Git\test> git add .
+PS C:\Users\hansp\OneDrive\Elijah Baptism Documents\WindowsPowerShell\Git\test> git statuus
+git: 'statuus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+PS C:\Users\hansp\OneDrive\Elijah Baptism Documents\WindowsPowerShell\Git\test> git commit
+Aborting commit due to empty commit message.
+PS C:\Users\hansp\OneDrive\Elijah Baptism Documents\WindowsPowerShell\Git\test> git commit -m "Minor change"
+[develop ea0812a] Minor change
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\hansp\OneDrive\Elijah Baptism Documents\WindowsPowerShell\Git\test> git push https://github.com/hansiein-ux/Test.git develop:develop
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 285 bytes | 285.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'develop' on GitHub by visiting:
+remote:      https://github.com/hansiein-ux/Test/pull/new/develop
+remote:
+To https://github.com/hansiein-ux/Test.git
+ * [new branch]      develop -> develop
+PS C:\Users\hansp\OneDrive\Elijah Baptism Documents\WindowsPowerShell\Git\test> git branch
+* develop
+  main
+  recover
+PS C:\Users\hansp\OneDrive\Elijah Baptism Documents\WindowsPowerShell\Git\test>
